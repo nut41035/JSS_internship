@@ -2,7 +2,7 @@
 
 The project does not contain training dataset
 
-To use this code:
+## To use this code:
  1. Install all required libraries in env.txt file.
  2. Put dataset in tho the following format.
  ```
@@ -40,3 +40,11 @@ To use this code:
  - all parameters under image size is just a dummy number pleast not use it for training
  
  4. run `python3 -m main`
+ 
+## Result 
+- Training performance can be viewed using tensorboard. The logs is saved in ./logs/{timestamp} folder by timestamp of the model.
+- Testing result can be found in ./result/{timestamp}/ folder.
+- Also, side-by-side comparison images of input image, ground truth, and prediction can be found in ./result/{timestamp}/grid/
+
+## Note
+To make the result image easier to distinguish the color difference, more implementation is still needed.
